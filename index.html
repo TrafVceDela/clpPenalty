@@ -503,7 +503,7 @@
         </div>
         <div class="result" id="result">OBTÉN TU SEÑAL</div>
         <div class="bet-amount hidden" id="bet-amount-container">
-          Monto de tu apuesta: <span id="bet-amount">0</span> CRC
+          Monto de tu apuesta: <span id="bet-amount">0</span> CLP
         </div>
         <div class="history-container">
           <div class="history" id="history"></div>
@@ -591,8 +591,8 @@
         getBetButton.disabled = true;
         getBetButton.textContent = "Generando...";
         setTimeout(() => {
-          const min = 500;
-          const max = 2000;
+          const min = 1000;
+          const max = 3000;
           gameState.betAmount =
             Math.floor(Math.random() * ((max - min) / 10)) * 10 + min;
 
@@ -678,3 +678,4 @@
 После этого сыграйте раунд как обычно. Когда вы нажмете "Get Signal", мяч полетит именно в ту зону, которую вы указали.
 
 Чтобы отключить этот режим и вернуться к случайным предсказаниям, введите в консоли команду resetPrediction() и нажмите Enter. -->
+
